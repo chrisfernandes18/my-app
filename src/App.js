@@ -12,7 +12,7 @@ import linkedinIcon from './assets/icons/linkedin-icon.svg';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
 
         <div className="navigation">
