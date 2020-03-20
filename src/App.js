@@ -4,6 +4,7 @@ import Home from './Home.js';
 import Photos from './Photos.js';  
 import Projects from './Projects.js';
 import Thumbnail from './Thumbnail.js';
+import Contact from './Contact.js';
 import './App.css';
 import facebookIcon from './assets/icons/facebook-icon.svg';
 import instagramIcon from './assets/icons/instagram-icon.png';
@@ -19,12 +20,14 @@ function App() {
             <Link to="/" className="item">Home</Link>
             <Link to="/projects" className="item">Projects</Link>
             <Link to="/photos" className="item">Photos</Link>
+            <Link to="/contact" className="item">Contact</Link>
         </div>
         
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/photos" component={Photos} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
 
         <div className="container">
