@@ -96,7 +96,11 @@ button {
   }
 
   .paragraph p {
-    padding: 0 10vw;
+    padding: 0 3vw;
+  }
+
+  .code p {
+    padding: 0 3vw;
   }
 }
 
