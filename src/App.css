@@ -11,6 +11,8 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+
+
 }
 
 .App-header {
@@ -35,4 +37,123 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.item {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  padding: 2vw;
+  font-family: monospace;
+  font-size: 3vh;
+  display: block;
+}
+
+.navigation a:hover {
+  color: darkcyan;
+}
+
+.navigation-element {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+    
+  }
+  
+  .navigation a {
+    display: block;
+  }
+
+  button {
+    display: block;
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .paragraph p {
+    padding: 0 10vw;
+  }
+}
+
+.footer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  line-height: 200%;
+}
+
+.footer-element {
+  display: inline-block;
+  margin: 3vh 1vw;
+}
+
+.footer-element a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.paragraph {
+  display: inline-block;
+}
+
+.paragraph p {
+  text-align: justify;
+  color: black;
+  display: block;
+  margin-top: 1em;
+  padding: 0 20vw;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.paragraph a {
+  text-decoration: none;
+  color: darkcyan;
+}
+
+.active {
+  background-color: darkcyan;
+}
+
+body {
+  background-color: lightblue;
+}
+
+h2 {
+  text-align: left;
+  padding: 0 2vw;
+}
+
+h3 {
+  text-align: left;
+  padding: 0 3vw;
 }

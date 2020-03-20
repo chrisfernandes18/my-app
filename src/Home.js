@@ -1,0 +1,33 @@
+import React from 'react';
+import './App.css';
+import pdf from './assets/resume/christian-bjerre-fernandes.pdf';
+import finnJake from './assets/adventuretime/finn_jake.png';
+
+function Home(props) {
+  return (
+    <div>
+      <h1>Christian Bjerre-Fernandes</h1>
+      <img src={finnJake} width="250" height="200" alt="Finn and Jake"></img>
+      <div className="paragraph">
+        <p>
+          Hello! My name is Christian Bjerre-Fernandes. I am currently a Third
+          year student at the <a href="https://www.uchicago.edu/">University of Chicago</a>,
+          studying Computer Science. I also love to study languages, and learning about other
+          cultures.
+          <br></br>
+          <br></br>
+          Some of the things I do on campus include being a part of <a href="https://equalopportunityprograms.uchicago.edu/title-ix/rsvp-programming-center/">Resources for Sexual Violence Prevention (RSVP)
+          </a>, <a href="https://www.facebook.com/UChicagoTheMark/">The Mark</a>, and <a href="https://uncommonhacks.com/">Uncommon Hacks</a>.
+          My hobbies include participating in Intramural Sports with my house (Ultimate Frisbee, Foosball, Inner Tube Waterpolo, etc),
+          playing Super Smash Bros Ultimate, watching Movies (The Prestige, Lincoln Lawyer, etc.) and Shows (Bojack Horseman, Love is Blind, etc.),
+          and Photography.
+          <br></br>
+          <br></br>
+          <a href={pdf} target="_blanks">Here</a> is my resume!
+        </p>
+      </div>
+    </div>
+  )
+}
+ 
+export default Home;
