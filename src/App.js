@@ -66,6 +66,9 @@ function App() {
               />
           </ul>
         </div>
+        <div className="copyright-footer">
+          <p className="copyright-text">Designed & Built by Christian Bjerre-Fernandes</p>
+        </div>
       </div>
     </BrowserRouter>
   );
