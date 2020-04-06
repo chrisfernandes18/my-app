@@ -21,7 +21,7 @@ function Projects(props) {
                 <a href="https://github.com/chrisfernandes18/Jisho" target="blank_" rel="noopener noreferrer">
                     <div className="card-container">
                         <h3>Jisho</h3>
-                        <p>Search up Japanese words on Jisho from the command line.</p>
+                        <p>Search up Japanese words on https://www.jisho.org from the command line.</p>
                         <div className="tech-container">
                             <hl>
                                 Python
