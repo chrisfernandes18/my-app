@@ -3,7 +3,7 @@ import Gallery from 'react-photo-gallery';
 
 function Photos(props) {
   return (
-    <div>
+    <div className="photos">
       <h1>Photos</h1>
       <h2>Costa Rica</h2>
       <h3>July 2019</h3>
