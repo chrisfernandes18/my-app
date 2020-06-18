@@ -30,6 +30,18 @@ function Projects(props) {
                         <div className="bottom"></div>
                     </div>
                 </a>
+                <a href="https://github.com/chrisfernandes18/Connect4" target="blank_" rel="noopener noreferrer">
+                    <div className="card-container">
+                        <h3>Connect4</h3>
+                        <p>Play Connect 4 on your computer.</p>
+                        <div className="tech-container">
+                            <hl>
+                                Python
+                            </hl>
+                        </div>
+                        <div className="bottom"></div>
+                    </div>
+                </a>
             </div>
         </div>
     )
