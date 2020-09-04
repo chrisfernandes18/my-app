@@ -5,6 +5,9 @@ import Photos from './Photos.js';
 import Projects from './Projects.js';
 import Thumbnail from './Thumbnail.js';
 import Contact from './Contact.js';
+import Blog from './Blog.js';
+import Mats from './Mats.js';
+import ReadList from './ReadList.js';
 import './App.css';
 import facebookIcon from './assets/icons/facebook-icon.svg';
 import instagramIcon from './assets/icons/instagram-icon.png';
@@ -21,6 +24,16 @@ function App() {
             <Link to="/projects" className="item">Projects</Link>
             <Link to="/photos" className="item">Photos</Link>
             <Link to="/contact" className="item">Contact</Link>
+            <div className="dropdown">
+              <div className="item">
+                More
+              </div>
+              <div className="dropdown-content">
+                <Link to="/blog" className="item">Blog</Link>
+                <Link to="/mats" className="item">MATS</Link>
+                <Link to="/read-list" className="item">Read List</Link>
+              </div>
+            </div>
         </div>
         
         <Switch>
@@ -28,6 +41,9 @@ function App() {
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/photos" component={Photos} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/mats" component={Mats} />
+          <Route exact path="/read-list" component={ReadList}/>
         </Switch>
 
         <div className="container">
