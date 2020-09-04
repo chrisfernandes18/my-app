@@ -154,8 +154,8 @@ class Mats extends Component {
                         <div className="item">Read List</div>
                     </div>
                 </div>
+                <h2>{this.state.season} Anime {this.state.seasonYear}</h2>
                 <div className="anime-container">
-                    <h2>{this.state.season} Anime {this.state.seasonYear}</h2>
                     {this.state.anime.map(show => {
                         const airing = show.nextAiringEpisode === null? "Completed": new Date(show.nextAiringEpisode.airingAt * 1000);
                         let time = "";
@@ -170,7 +170,7 @@ class Mats extends Component {
                                 <img src={show.coverImage.extraLarge} alt="Show Cover"></img>
                             </a>
                             <p>{show.title.romaji}</p>
-                            <div className="layer-slidedown">
+                            <div className="layer-slidedown" id="anime-info">
                                 <div className="layer-slidedown-text">{time}</div>
                                 <div className="layer-slidedown-text">{removeTags(show.description)}</div>
                             </div>
