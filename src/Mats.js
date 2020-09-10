@@ -141,45 +141,47 @@ class Mats extends Component {
     }
     
     render() {
-        return (
-            <div className="mats-container">
-                <h1>MATS</h1>
-                <div className="dropdown-mats">
-                    <div className="item">
-                        More
-                    </div>
-                    <div className="dropdown-content-mats">
-                        <div className="item">Blog</div>
-                        <div className="item">MATS</div>
-                        <div className="item">Read List</div>
+        console.log(this.state.anime);
+        if (typeof this.state.anime === 'undefined') {
+            return (
+                <div className="mats-container">
+                    <h1>MATS</h1>
+                    <div>
+                        Could not load the information. Try reloading the page.
                     </div>
                 </div>
-                <h2>{this.state.season} Anime {this.state.seasonYear}</h2>
-                <div className="anime-container">
-                    {this.state.anime.map(show => {
-                        const airing = show.nextAiringEpisode === null? "Completed": new Date(show.nextAiringEpisode.airingAt * 1000);
-                        let time = "";
-                        if (airing === "Completed") {
-                            time = "Finished Airing.";
-                        } else {
-                            time = time.concat('Airing at ', (airing.getMonth() + 1).toString(), '-', airing.getDate(), '-', airing.getFullYear(), ' at ', airing.getHours(), ':', airing.getMinutes() < 10? "0" + airing.getMinutes(): airing.getMinutes(), ' ', timezone());
-                        } 
-                        return (
-                        <div className="anime-card" key={show.title.native}>
-                            <a href={show.externalLinks.filter(exlink => exlink.site === "Official Site")[0].site === "Official Site"?show.externalLinks.filter(exlink => exlink.site === "Official Site")[0].url:"/mats"}>
-                                <img src={show.coverImage.extraLarge} alt="Show Cover"></img>
-                            </a>
-                            <p>{show.title.romaji}</p>
-                            <div className="layer-slidedown" id="anime-info">
-                                <div className="layer-slidedown-text">{time}</div>
-                                <div className="layer-slidedown-text">{removeTags(show.description)}</div>
+            );
+        } else {
+            return (
+                <div className="mats-container">
+                    <h1>MATS</h1>
+                    <h2>{this.state.season} Anime {this.state.seasonYear}</h2>
+                    <div className="anime-container">
+                        {this.state.anime.map(show => {
+                            const airing = show.nextAiringEpisode === null? "Completed": new Date(show.nextAiringEpisode.airingAt * 1000);
+                            let time = "";
+                            if (airing === "Completed") {
+                                time = "Finished Airing.";
+                            } else {
+                                time = time.concat('Airing at ', (airing.getMonth() + 1).toString(), '-', airing.getDate(), '-', airing.getFullYear(), ' at ', airing.getHours(), ':', airing.getMinutes() < 10? "0" + airing.getMinutes(): airing.getMinutes(), ' ', timezone());
+                            } 
+                            return (
+                            <div className="anime-card" key={show.title.native}>
+                                <a href={show.externalLinks.filter(exlink => exlink.site === "Official Site")[0].site === "Official Site"?show.externalLinks.filter(exlink => exlink.site === "Official Site")[0].url:"/mats"}>
+                                    <img src={show.coverImage.extraLarge} alt="Show Cover"></img>
+                                </a>
+                                <p>{show.title.romaji}</p>
+                                <div className="layer-slidedown">
+                                    <div className="layer-slidedown-text">{time}</div>
+                                    <div className="layer-slidedown-text">{removeTags(show.description)}</div>
+                                </div>
                             </div>
-                        </div>
-                        )
-                    })} 
+                            )
+                        })} 
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        }
     }
 
 }

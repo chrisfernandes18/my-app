@@ -363,25 +363,25 @@ button {
 
 /* Scrollbar for Anime Cards */
 /* width */
-#anime-info::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 5px;
 }
 
 /* Track */
-#anime-info::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   border-radius: 100px;
   margin: 5px 5px 5px 0px;
 }
 
 /* Handle */
-#anime-info::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 100px;
   margin: 5px 5px 5px 0px;
 }
 
 /* Handle on hover */
-#anime-info::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
