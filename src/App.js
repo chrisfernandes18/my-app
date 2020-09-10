@@ -6,7 +6,7 @@ import Projects from './Projects.js';
 import Thumbnail from './Thumbnail.js';
 import Contact from './Contact.js';
 import Blog from './Blog.js';
-import Mats from './Mats.js';
+import Mats from './AnimeList.js';
 import ReadList from './ReadList.js';
 import './App.css';
 import facebookIcon from './assets/icons/facebook-icon.svg';
@@ -30,7 +30,7 @@ function App() {
               </div>
               <div className="dropdown-content">
                 <Link to="/blog" className="item">Blog</Link>
-                <Link to="/mats" className="item">MATS</Link>
+                <Link to="/anime-list" className="item">Anime List</Link>
                 <Link to="/read-list" className="item">Read List</Link>
               </div>
             </div>
