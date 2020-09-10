@@ -50,7 +50,7 @@ class AnimeList extends Component {
         }
         let mal_ids = [];
         jikanjs.loadUser('chrisfernandes18', 'animelist').then(response => {
-            console.log(response.anime);
+            //console.log(response.anime);
             response.anime.forEach(obj => {
                 mal_ids.push(obj.mal_id);
             });
