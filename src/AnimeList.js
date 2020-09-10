@@ -20,7 +20,7 @@ function timezone()
   return /\((.*)\)/.exec(new Date().toString())[1];
 }
 
-class Mats extends Component {
+class AnimeList extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -144,8 +144,8 @@ class Mats extends Component {
         console.log(this.state.anime);
         if (typeof this.state.anime === 'undefined') {
             return (
-                <div className="mats-container">
-                    <h1>MATS</h1>
+                <div className="anime-list-container">
+                    <h1>Anime list</h1>
                     <div>
                         Could not load the information. Try reloading the page.
                     </div>
@@ -153,8 +153,8 @@ class Mats extends Component {
             );
         } else {
             return (
-                <div className="mats-container">
-                    <h1>MATS</h1>
+                <div className="anime-list-container">
+                    <h1>Anime List</h1>
                     <h2>{this.state.season} Anime {this.state.seasonYear}</h2>
                     <div className="anime-container">
                         {this.state.anime.map(show => {
@@ -167,7 +167,7 @@ class Mats extends Component {
                             } 
                             return (
                             <div className="anime-card" key={show.title.native}>
-                                <a href={show.externalLinks.filter(exlink => exlink.site === "Official Site")[0].site === "Official Site"?show.externalLinks.filter(exlink => exlink.site === "Official Site")[0].url:"/mats"}>
+                                <a href={show.externalLinks.filter(exlink => exlink.site === "Official Site")[0].site === "Official Site"?show.externalLinks.filter(exlink => exlink.site === "Official Site")[0].url:"/anime-list"}>
                                     <img src={show.coverImage.extraLarge} alt="Show Cover"></img>
                                 </a>
                                 <p>{show.title.romaji}</p>
@@ -186,4 +186,4 @@ class Mats extends Component {
 
 }
 
-export default Mats;
+export default AnimeList;

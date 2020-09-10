@@ -6,7 +6,7 @@ import Projects from './Projects.js';
 import Thumbnail from './Thumbnail.js';
 import Contact from './Contact.js';
 import Blog from './Blog.js';
-import Mats from './AnimeList.js';
+import AnimeList from './AnimeList.js';
 import ReadList from './ReadList.js';
 import './App.css';
 import facebookIcon from './assets/icons/facebook-icon.svg';
@@ -42,7 +42,7 @@ function App() {
           <Route exact path="/photos" component={Photos} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/blog" component={Blog} />
-          <Route exact path="/mats" component={Mats} />
+          <Route exact path="/anime-list" component={AnimeList} />
           <Route exact path="/read-list" component={ReadList}/>
         </Switch>
 
