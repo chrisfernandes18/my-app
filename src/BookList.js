@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 
-function ReadList(props) {
+function BookList(props) {
     return (
         <div>
-            <h1>Reading List</h1>
+            <h1>Book List</h1>
         </div>
     )
 }
 
-export default ReadList;
+export default BookList;

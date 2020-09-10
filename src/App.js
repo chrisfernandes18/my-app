@@ -7,7 +7,7 @@ import Thumbnail from './Thumbnail.js';
 import Contact from './Contact.js';
 import Blog from './Blog.js';
 import AnimeList from './AnimeList.js';
-import ReadList from './ReadList.js';
+import BookList from './BookList.js';
 import './App.css';
 import facebookIcon from './assets/icons/facebook-icon.svg';
 import instagramIcon from './assets/icons/instagram-icon.png';
@@ -31,7 +31,7 @@ function App() {
               <div className="dropdown-content">
                 <Link to="/blog" className="item">Blog</Link>
                 <Link to="/anime-list" className="item">Anime List</Link>
-                <Link to="/read-list" className="item">Read List</Link>
+                <Link to="/book-list" className="item">Book List</Link>
               </div>
             </div>
         </div>
@@ -43,7 +43,7 @@ function App() {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/anime-list" component={AnimeList} />
-          <Route exact path="/read-list" component={ReadList}/>
+          <Route exact path="/book-list" component={BookList} />
         </Switch>
 
         <div className="container">

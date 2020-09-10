@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+const jikanjs  = require('jikanjs')
 
 // Source: https://www.geeksforgeeks.org/how-to-strip-out-html-tags-from-a-string-using-javascript/
 function removeTags(str) { 
@@ -26,7 +27,9 @@ class AnimeList extends Component {
         this.state = {
             anime: [],
             season: "",
-            seasonYear: 0
+            seasonYear: 0,
+            myanime: [],
+            currDesc: ""
         };
     }
 
@@ -45,6 +48,16 @@ class AnimeList extends Component {
         } else {
             s = "FALL";
         }
+        let mal_ids = [];
+        jikanjs.loadUser('chrisfernandes18', 'animelist').then(response => {
+            console.log(response.anime);
+            response.anime.forEach(obj => {
+                mal_ids.push(obj.mal_id);
+            });
+            return this.setState({
+                myanime: response.anime
+            });
+        }).catch(error => console.log(error));
         this.getData(s, y).then(results => {
             return this.setState({
                 anime: results,
@@ -139,9 +152,8 @@ class AnimeList extends Component {
                         .catch(error => console.log(error));
         return anime;
     }
-    
+
     render() {
-        console.log(this.state.anime);
         if (typeof this.state.anime === 'undefined') {
             return (
                 <div className="anime-list-container">
@@ -155,7 +167,7 @@ class AnimeList extends Component {
             return (
                 <div className="anime-list-container">
                     <h1>Anime List</h1>
-                    <h2>{this.state.season} Anime {this.state.seasonYear}</h2>
+                    <h2>Current {this.state.season} Anime {this.state.seasonYear}</h2>
                     <div className="anime-container">
                         {this.state.anime.map(show => {
                             const airing = show.nextAiringEpisode === null? "Completed": new Date(show.nextAiringEpisode.airingAt * 1000);
@@ -174,6 +186,35 @@ class AnimeList extends Component {
                                 <div className="layer-slidedown">
                                     <div className="layer-slidedown-text">{time}</div>
                                     <div className="layer-slidedown-text">{removeTags(show.description)}</div>
+                                </div>
+                            </div>
+                            )
+                        })} 
+                    </div>
+                    <h2>My Anime List</h2>
+                    <div className="anime-container">
+                        {this.state.myanime.map(show => {
+                            let watched = '';
+                            if (show.airing_status === 1 && show.total_episodes === 0) {
+                                watched = watched.concat("Have watched: ", show.watched_episodes);
+                            } else {
+                                watched = watched.concat("Watched: ", show.watched_episodes, " / ", show.total_episodes);
+                            }
+                            let score = ''.concat("Score: ", show.score, "/10");
+                            return (
+                            <div className="anime-card" key={show.mal_id}>
+                                <a href={show.url}>
+                                    <img src={show.image_url} alt="Show Cover"></img>
+                                </a>
+                                <p>{show.title}</p>
+                                <div className="layer-slidedown">
+                                    <div className="layer-slidedown-text">{show.watching_status === 1?"Currently watching.":show.watching_status === 2? "Completed.": "Plan to watch."}</div>
+                                    <div></div>
+                                    <div className="layer-slidedown-text">{watched}</div>
+                                    <div></div>
+                                    <div className="layer-slidedown-text">{score}</div>
+                                    <div></div>
+                                    <div className="layer-slidedown-text"><a href={show.url} >{"MAL Link"}</a></div>
                                 </div>
                             </div>
                             )
