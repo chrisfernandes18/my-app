@@ -198,7 +198,7 @@ class AnimeList extends Component {
                             if (show.airing_status === 1 && show.total_episodes === 0) {
                                 watched = watched.concat("Have watched: ", show.watched_episodes);
                             } else {
-                                watched = watched.concat("Watched: ", show.watched_episodes, " / ", show.total_episodes);
+                                watched = watched.concat("Watched: ", show.watched_episodes, "/", show.total_episodes);
                             }
                             let score = ''.concat("Score: ", show.score, "/10");
                             return (
