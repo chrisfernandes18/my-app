@@ -168,6 +168,7 @@ class AnimeList extends Component {
                 <div className="anime-list-container">
                     <h1>Anime List</h1>
                     <h2>Current {this.state.season} Anime {this.state.seasonYear}</h2>
+                    <h4>Source: anichart.net</h4>
                     <div className="anime-container">
                         {this.state.anime.map(show => {
                             const airing = show.nextAiringEpisode === null? "Completed": new Date(show.nextAiringEpisode.airingAt * 1000);
@@ -192,6 +193,7 @@ class AnimeList extends Component {
                         })} 
                     </div>
                     <h2>My Anime List</h2>
+                    <h4>Source: myanimelist.net</h4>
                     <div className="anime-container">
                         {this.state.myanime.map(show => {
                             let watched = '';
