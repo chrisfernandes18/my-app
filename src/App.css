@@ -361,6 +361,10 @@ button {
   text-align: center;
 }
 
+.layer-slidedown-text a:hover {
+  color: darkcyan;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
