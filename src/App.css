@@ -425,3 +425,11 @@ a {
 .dropdown-mats:hover .dropdown-content-mats {
   display: block;
 }
+
+li.list {
+  display: block;
+  padding: 5px;
+}
+.list b {
+  color: rgb(1, 122, 122);
+}
