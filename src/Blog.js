@@ -6,7 +6,7 @@ function Blog(props) {
         <div>
             <h1>Blog</h1>
             <div>
-                Information coming soon.
+                Blogs coming soon.
             </div>
         </div>
     )
