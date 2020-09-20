@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import pdf from './assets/resume/christian-bjerre-fernandes.pdf';
+import resume from './assets/resume/christian-bjerre-fernandes.pdf';
 import finnJake from './assets/adventuretime/finn_jake.png';
 
 function Home(props) {
@@ -19,11 +19,11 @@ function Home(props) {
           On campus, I am a part of <a href="https://equalopportunityprograms.uchicago.edu/title-ix/rsvp-programming-center/">Resources for Sexual Violence Prevention (RSVP)
           </a>, <a href="https://www.facebook.com/UChicagoTheMark/">The Mark</a>, and <a href="https://uncommonhacks.com/">Uncommon Hacks</a>.
           Besides school and work, I love to participate in intramural sports with my house (Ultimate Frisbee, Foosball, Inner Tube Waterpolo, etc),
-          play super smash bros ultimate (SSBU), watch movies (The Prestige, Lincoln Lawyer, etc.) and shows (Bojack Horseman, Love is Blind, etc.),
+          play Apex Legends (I main Wraith), watch movies (The Prestige, Lincoln Lawyer, etc.) and shows (Bojack Horseman, Love is Blind, etc.),
           and photography.
           <br></br>
           <br></br>
-          <a href={pdf} target="_blanks">Here</a> is my resume!
+          <a href={resume} target="_blanks">Here</a> is my resume!
         </p>
       </div>
     </div>
