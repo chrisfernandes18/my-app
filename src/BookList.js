@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import booklist from './assets/booklist.json';
+import booklist from './assets/lists/booklist.json';
 import './App.css';
 
 class BookList extends Component {
