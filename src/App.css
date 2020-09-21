@@ -365,7 +365,7 @@ button {
   color: darkcyan;
 }
 
-a {
+.layer-slidedown a {
   display: inline-block;
   text-decoration: none;
   color: white;
