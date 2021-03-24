@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+
 function Projects(props) {
     return (
         <div>
@@ -45,7 +46,7 @@ function Projects(props) {
                 <a href="https://github.com/chrisfernandes18/functional-project" target="blank_" rel="noopener noreferrer">
                     <div className="card-container">
                         <h3>Checkers</h3>
-                        <p>Play checkers in browser. Click <a href="" target="blank_" rel="noopener noreferrer">here</a> to try it out.</p>
+                        <p>Play checkers in a browser.</p>
                         <div className="tech-container">
                             <hl>
                                 Elm
