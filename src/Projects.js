@@ -42,6 +42,18 @@ function Projects(props) {
                         <div className="bottom"></div>
                     </div>
                 </a>
+                <a href="https://github.com/chrisfernandes18/functional-project" target="blank_" rel="noopener noreferrer">
+                    <div className="card-container">
+                        <h3>Checkers</h3>
+                        <p>Play checkers in browser. Click <a href="" target="blank_" rel="noopener noreferrer">here</a> to try it out.</p>
+                        <div className="tech-container">
+                            <hl>
+                                Elm
+                            </hl>
+                        </div>
+                        <div className="bottom"></div>
+                    </div>
+                </a>
             </div>
         </div>
     )

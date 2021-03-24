@@ -1,5 +1,82 @@
 import React from "react"
 import Gallery from 'react-photo-gallery';
+import image1 from "./assets/costa_rica/2019/IMG_0003.JPG";
+import image2 from "./assets/costa_rica/2019/IMG_0022.JPG";
+import image3 from "./assets/costa_rica/2019/IMG_0080.JPG";
+import image4 from "./assets/costa_rica/2019/IMG_0154.JPG";
+import image5 from "./assets/costa_rica/2019/IMG_0176.JPG";
+import image6 from "./assets/costa_rica/2019/IMG_0277.JPG";
+import image7 from "./assets/costa_rica/2019/IMG_9732.JPG";
+import image8 from "./assets/costa_rica/2019/IMG_9745.JPG";
+import image9 from "./assets/costa_rica/2019/IMG_9793.JPG";
+import image10 from "./assets/costa_rica/2019/IMG_9802.JPG";
+import image11 from "./assets/costa_rica/2019/IMG_9805.JPG";
+import image12 from "./assets/costa_rica/2019/IMG_9849.JPG";
+import image13 from "./assets/costa_rica/2019/IMG_9985.JPG";
+import image14 from "./assets/costa_rica/2018/IMG_0454.JPG";
+import image15 from "./assets/costa_rica/2018/IMG_0581.JPG";
+import image16 from "./assets/costa_rica/2018/IMG_0582.JPG";
+import image17 from "./assets/costa_rica/2018/IMG_0588.JPG";
+import image18 from "./assets/costa_rica/2018/IMG_0589.JPG";
+import image19 from "./assets/costa_rica/2018/IMG_0603.JPG";
+import image20 from "./assets/costa_rica/2018/IMG_0608.JPG";
+import image21 from "./assets/costa_rica/2018/IMG_0704.JPG";
+import image22 from "./assets/costa_rica/2018/IMG_0749.JPG";
+import image23 from "./assets/costa_rica/2018/IMG_0803.JPG";
+import image24 from "./assets/costa_rica/2018/IMG_0807.JPG";
+import image25 from "./assets/costa_rica/2018/IMG_0850.JPG";
+import image26 from "./assets/costa_rica/2018/IMG_0868.JPG";
+import image27 from "./assets/eclipse/IMG_0086.JPG";
+import image28 from "./assets/eclipse/IMG_0110.JPG";
+import image29 from "./assets/eclipse/IMG_0090.JPG";
+import image30 from "./assets/eclipse/IMG_0111.JPG";
+import image31 from "./assets/eclipse/IMG_0114.JPG";
+import image32 from "./assets/eclipse/IMG_0118.JPG";
+import image33 from "./assets/japan/IMGP1555.JPG";
+import image34 from "./assets/japan/IMGP1603.JPG";
+import image35 from "./assets/japan/IMGP1617.JPG";
+import image36 from "./assets/japan/IMGP1752.JPG";
+import image37 from "./assets/japan/IMGP1817.JPG";
+import image38 from "./assets/japan/IMGP1968.JPG";
+import image39 from "./assets/japan/IMGP2028.JPG";
+import image40 from "./assets/japan/IMGP1969.JPG";
+import image41 from "./assets/japan/IMGP2007.JPG";
+import image42 from "./assets/japan/IMGP2029.JPG";
+import image43 from "./assets/japan/IMGP2118.JPG";
+import image44 from "./assets/japan/IMGP2158.JPG";
+import image45 from "./assets/japan/IMGP2201.JPG";
+import image46 from "./assets/japan/IMGP2327.JPG";
+import image47 from "./assets/japan/IMGP2331.JPG";
+import image48 from "./assets/japan/IMGP2351.JPG";
+import image49 from "./assets/japan/IMGP2402.JPG";
+import image50 from "./assets/japan/IMGP2414.JPG";
+import image51 from "./assets/japan/IMGP2415.JPG";
+import image52 from "./assets/japan/IMGP2445.JPG";
+import image53 from "./assets/japan/IMGP2453.JPG";
+import image54 from "./assets/japan/IMGP2457.JPG";
+import image55 from "./assets/japan/IMGP2503.JPG";
+import image56 from "./assets/japan/IMGP2538.JPG";
+import image57 from "./assets/japan/IMGP2539.JPG";
+import image58 from "./assets/japan/IMGP2543.JPG";
+import image59 from "./assets/japan/IMGP2548.JPG";
+import image60 from "./assets/japan/IMGP2609.JPG";
+import image61 from "./assets/japan/IMGP2613.JPG";
+import image62 from "./assets/japan/IMGP2618.JPG";
+import image63 from "./assets/japan/IMGP2621.JPG";
+import image64 from "./assets/japan/IMGP2639.JPG";
+import image65 from "./assets/japan/IMGP2716.JPG";
+import image66 from "./assets/japan/IMGP2737.JPG";
+import image67 from "./assets/japan/IMGP2796.JPG";
+import image68 from "./assets/japan/IMGP2791.JPG";
+import image69 from "./assets/japan/IMGP2794.JPG";
+import image70 from "./assets/japan/IMGP2795.JPG";
+import image71 from "./assets/japan/IMGP2870.JPG";
+import image72 from "./assets/japan/IMGP2833.JPG";
+import image73 from "./assets/japan/IMGP2871.JPG";
+import image74 from "./assets/japan/IMGP3145.JPG";
+import image75 from "./assets/japan/IMGP2928.JPG";
+import image76 from "./assets/japan/IMGP3159.JPG";
+
 
 function Photos(props) {
   return (
@@ -25,67 +102,67 @@ const h = 20;
 
 const costaricaPhotos19 = [
   {
-    src: require("./assets/costa_rica/2019/IMG_0003.JPG"),
+    src: image1,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2019/IMG_0022.JPG"),
+    src: image2,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2019/IMG_0080.JPG"),
+    src: image3,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2019/IMG_0154.JPG"),
+    src: image4,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2019/IMG_0176.JPG"),
+    src: image5,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2019/IMG_0277.JPG"),
+    src: image6,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2019/IMG_9732.JPG"),
+    src: image7,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2019/IMG_9745.JPG"),
+    src: image8,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2019/IMG_9793.JPG"),
+    src: image9,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2019/IMG_9802.JPG"),
+    src: image10,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2019/IMG_9805.JPG"),
+    src: image11,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2019/IMG_9849.JPG"),
+    src: image12,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2019/IMG_9985.JPG"),
+    src: image13,
     width: w,
     height: h
   }
@@ -94,100 +171,102 @@ const costaricaPhotos19 = [
 
 const costaricaPhotos18 = [
   {
-    src: require("./assets/costa_rica/2018/IMG_0454.JPG"),
+    src: image14,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2018/IMG_0581.JPG"),
+    src: image15,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2018/IMG_0582.JPG"),
+    src: image16,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2018/IMG_0588.JPG"),
+    src: image17,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2018/IMG_0589.JPG"),
+    src: image18,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2018/IMG_0603.JPG"),
+    src: image19,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2018/IMG_0608.JPG"),
+    src: image20,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2018/IMG_0704.JPG"),
+    src: image21,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2018/IMG_0749.JPG"),
+    src: image22,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2018/IMG_0803.JPG"),
+    src: image23,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2018/IMG_0807.JPG"),
+    src: image24,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2018/IMG_0850.JPG"),
+    src: image25,
     width: w,
     height: h
   },
   {
-    src: require("./assets/costa_rica/2018/IMG_0868.JPG"),
+    src: image26,
     width: w,
     height: h
   }
 ]
 
+
+
 const eclipsePhotos = [
   {
-    src: require("./assets/eclipse/IMG_0086.JPG"),
+    src: image27,
     width: w,
     height: h
   },
   {
-    src: require("./assets/eclipse/IMG_0110.JPG"),
+    src: image28,
     width: w,
     height: h
   },
   {
-    src: require("./assets/eclipse/IMG_0090.JPG"),
+    src: image29,
     width: w,
     height: h
   },
   {
-    src: require("./assets/eclipse/IMG_0111.JPG"),
+    src: image30,
     width: w,
     height: h
   },
   {
-    src: require("./assets/eclipse/IMG_0114.JPG"),
+    src: image31,
     width: w,
     height: h
   },
   {
-    src: require("./assets/eclipse/IMG_0118.JPG"),
+    src: image32,
     width: w,
     height: h
   }
@@ -195,222 +274,223 @@ const eclipsePhotos = [
 
 const japanPhotos = [
   {
-    src: require("./assets/japan/IMGP1555.JPG"),
+    src: image33,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP1603.JPG"),
+    src: image34,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP1617.JPG"),
+    src: image35,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP1752.JPG"),
+    src: image36,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP1817.JPG"),
+    src: image37,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP1968.JPG"),
+    src: image38,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2028.JPG"),
+    src: image39,
     width: w,
     height: w
   },
   {
-    src: require("./assets/japan/IMGP1969.JPG"),
+    src: image40,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2007.JPG"),
+    src: image41,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2029.JPG"),
+    src: image42,
     width: w,
     height: w
   },
   {
-    src: require("./assets/japan/IMGP2118.JPG"),
+    src: image43,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2158.JPG"),
+    src: image44,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2201.JPG"),
+    src: image45,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2327.JPG"),
+    src: image46,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2331.JPG"),
+    src: image47,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2351.JPG"),
+    src: image48,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2402.JPG"),
+    src: image49,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2414.JPG"),
+    src: image50,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2415.JPG"),
+    src: image51,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2445.JPG"),
+    src: image52,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2453.JPG"),
+    src: image53,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2457.JPG"),
+    src: image54,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2503.JPG"),
+    src: image55,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2538.JPG"),
+    src: image56,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2539.JPG"),
+    src: image57,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2543.JPG"),
+    src: image58,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2548.JPG"),
+    src: image59,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2609.JPG"),
+    src: image60,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2613.JPG"),
+    src: image61,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2618.JPG"),
+    src: image62,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2621.JPG"),
+    src: image63,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2639.JPG"),
+    src: image64,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2716.JPG"),
+    src: image65,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2737.JPG"),
+    src: image66,
     width: h,
     height: w
   },
   {
-    src: require("./assets/japan/IMGP2796.JPG"),
+    src: image67,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2791.JPG"),
+    src: image68,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2794.JPG"),
+    src: image69,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2795.JPG"),
+    src: image70,
+    width: w,
+    height: h
+  },
+
+  {
+    src: image71,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2870.JPG"),
+    src: image72,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2833.JPG"),
+    src: image73,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2871.JPG"),
+    src: image74,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP3145.JPG"),
+    src: image75,
     width: w,
     height: h
   },
   {
-    src: require("./assets/japan/IMGP2928.JPG"),
-    width: w,
-    height: h
-  },
-  {
-    src: require("./assets/japan/IMGP3159.JPG"),
+    src: image76,
     width: w,
     height: h
   }
