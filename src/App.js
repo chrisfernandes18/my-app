@@ -14,26 +14,6 @@ import instagramIcon from './assets/icons/instagram-icon.png';
 import githubIcon from './assets/icons/github-icon.svg';
 import linkedinIcon from './assets/icons/linkedin-icon.svg';
 
-var request = require("request");
-var matchData = {
-  "id": "afd8eca9-57ea-4458-a9d6-bfeaa62aa6e6",
-  "startedAt": "2020-07-31T20:40:11Z",
-  "endedAt": "2020-07-31T20:50:47Z",
-  "players": ['chrisfernandes18'],
-  "Access-Control-Allow-Origin": '*'
-}; //<---This is your match data. Can be any format.
-request.post({
-  headers: {
-    "content-type" : "application/json", 
-    "TRN-Api-Key": "78a12c4b-da4c-4d62-95d2-8a0d88be114d"
-  },
-  url:     "https://public-api.tracker.gg/v2/apex/standard/profile/psn/chrisfernandes18",
-  body:    JSON.stringify(matchData)
-}, function(error, response, body){
-  console.log("error", error);
-  console.log("response", response);
-  console.log("body", body);
-});
 
 function App() {
   return (
