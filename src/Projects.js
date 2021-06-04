@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+
 function Projects(props) {
     return (
         <div>
@@ -37,6 +38,18 @@ function Projects(props) {
                         <div className="tech-container">
                             <hl>
                                 Python
+                            </hl>
+                        </div>
+                        <div className="bottom"></div>
+                    </div>
+                </a>
+                <a href="https://github.com/chrisfernandes18/functional-project" target="blank_" rel="noopener noreferrer">
+                    <div className="card-container">
+                        <h3>Checkers</h3>
+                        <p>Play checkers in a browser.</p>
+                        <div className="tech-container">
+                            <hl>
+                                Elm
                             </hl>
                         </div>
                         <div className="bottom"></div>
