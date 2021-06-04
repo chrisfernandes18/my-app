@@ -173,6 +173,10 @@ class AnimeList extends Component {
                         {this.state.anime.map(show => {
                             const airing = show.nextAiringEpisode === null? "Completed": new Date(show.nextAiringEpisode.airingAt * 1000);
                             let time = "";
+                            let filteredSites = show.externalLinks.filter(exlink => exlink.site === "Official Site");
+                            if (filteredSites.length === 0) {
+                                filteredSites = [{site: "No site."}];
+                            }
                             if (airing === "Completed") {
                                 time = "Finished Airing.";
                             } else {
@@ -180,7 +184,7 @@ class AnimeList extends Component {
                             } 
                             return (
                             <div className="anime-card" key={show.title.native}>
-                                <a href={show.externalLinks.filter(exlink => exlink.site === "Official Site")[0].site === "Official Site"?show.externalLinks.filter(exlink => exlink.site === "Official Site")[0].url:"/anime-list"}>
+                                <a href={filteredSites[0].site === "Official Site"?filteredSites[0].url:"/anime-list"}>
                                     <img src={show.coverImage.extraLarge} alt="Show Cover"></img>
                                 </a>
                                 <p>{show.title.romaji}</p>

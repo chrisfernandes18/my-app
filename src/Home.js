@@ -10,6 +10,7 @@ function Home(props) {
       <img src={finnJake} width="250" height="200" alt="Finn and Jake"></img>
       <div className="paragraph">
         <p>
+          <span>
           Hello! My name is Christian Bjerre-Fernandes. I am currently a fourth-year 
           student at the <a href="https://www.uchicago.edu/">University of Chicago</a>,
           studying computer science. In addition to computer science, I love to study languages, 
@@ -24,6 +25,7 @@ function Home(props) {
           <br></br>
           <br></br>
           <a href={resume} target="_blanks">Here</a> is my resume!
+          </span>
         </p>
       </div>
     </div>

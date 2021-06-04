@@ -11,8 +11,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-
-
 }
 
 .App-header {
@@ -43,7 +41,6 @@
 body {
   background-color: lightblue;
 }
-
 
 .photos h2 {
   text-align: left;
@@ -96,7 +93,7 @@ button {
   .navigation {
     flex-direction: column;
   }
-  
+
   .navigation a {
     display: block;
   }
@@ -149,7 +146,7 @@ button {
 .paragraph p {
   text-align: justify;
   color: black;
-  display: block;
+  display: inline-block;
   padding: 0vw 20vw;
   margin: 1em;
   font-size: 20px;
@@ -177,9 +174,9 @@ button {
 .project-cards-container {
   display: inline-block;
   text-align: center;
-  margin-left: 10VW;
-  margin-right: 10VW;
-  margin-bottom: 10VH;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10vh;
 }
 .project-cards-container a {
   text-decoration: none;
@@ -190,15 +187,15 @@ button {
   display: inline-grid;
   background-color: #f5f6ff;
   border-radius: 10px;
-  box-shadow: 0 0 5px 5px rgba(0,0,0,.1);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
   width: 200px;
   height: 200px;
   padding: 25px;
   margin: 50px 25px 25px;
   text-align: center;
-  font-family: Muli,sans-serif;
+  font-family: Muli, sans-serif;
   font-style: normal;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 0;
 }
 
@@ -221,7 +218,7 @@ button {
   bottom: 20px;
   line-height: 1.3;
   letter-spacing: 1px;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 300;
   padding-left: 10px;
   padding-right: 10px;
@@ -230,7 +227,6 @@ button {
 .tech-container {
   text-align: left;
 }
-
 
 .bottom {
   width: 100%;
@@ -241,14 +237,16 @@ button {
   padding-top: 10px;
 }
 
-.bottom, .card-container hl {
+.bottom,
+.card-container hl {
   position: absolute;
   left: 0;
   padding-bottom: 10px;
 }
 
 /* Bottom of the page */
-.copyright-footer, .copyright-text {
+.copyright-footer,
+.copyright-text {
   display: inline-flex;
   text-align: center;
   font-size: 12px;
@@ -273,13 +271,12 @@ button {
   color: darkcyan;
 }
 
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -302,16 +299,16 @@ button {
 .anime-container {
   display: inline-block;
   text-align: center;
-  margin-left: 10VW;
-  margin-right: 10VW;
-  margin-bottom: 10VH;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10vh;
 }
 
 .anime-card {
   position: relative;
   display: inline-grid;
   text-align: center;
-  font-family: Muli,sans-serif;
+  font-family: Muli, sans-serif;
   font-style: normal;
   border-radius: 10px;
   margin: 50px 25px 25px;
@@ -336,18 +333,18 @@ button {
   overflow-x: hidden;
   overflow-y: auto;
   opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 200px;
-	background: rgba(0, 0, 0, 0.8);
-	color: #fff;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
-	transition: all 0.4s ease-in-out 0s;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
 
 .anime-card:hover .layer-slidedown,
@@ -357,7 +354,7 @@ button {
 
 .layer-slidedown .layer-slidedown-text {
   padding: 10px;
-	font-size: 12px;
+  font-size: 12px;
   display: inline-block;
   text-align: center;
 }
@@ -412,7 +409,7 @@ button {
   display: none;
   position: relative;
   background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
